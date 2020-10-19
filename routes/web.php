@@ -20,6 +20,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
      Route::post('news/create', 'Admin\NewsController@create'); # laravel 13カリキュラムの課題③
     
     Route::get('profile/create','Admin\ProfileController@add');
+    Route::post('profile/create','Admin\ProfileController@create');
     Route::post('profile/edit','Admin\ProfileController@update');# laravel 13カリキュラムの課題⑥
 });
 
